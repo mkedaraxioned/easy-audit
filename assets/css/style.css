@@ -177,12 +177,151 @@ header a {
 /*=================================
   main styling starts here
 =================================*/
+.section1 > div {
+  width: 100%;
+  padding: 225px 0;
+  background-image: url('../images/slide-2.jpg');
+}
+
+.scroll-left {
+  width: 2.78%;
+  position: absolute;
+  top: 50%;
+  /* background-color: #FFF; */
+  color: #92cdea;
+  font-size: 49px;
+  height: 106px;
+  /* transform: translateY(-50%); */
+}
+
+.scroll-left > i {
+  /* transform: translate(50%,50%); */
+}
+
+.scroll-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  /* background-color: #FFF; */
+  color: #92cdea;
+  font-size: 49px;
+  width: 2.78%;
+  height: 106px;
+  /* width: 53px; */
+  /* transform: translateY(-50%); */
+}
+
+.scroll-right > i {
+  /* transform: translate(120%,50%); */
+}
+
+.section1-item:nth-of-type(n+2) {
+  display: none;
+}
+
+.section1-list {
+  margin: 0 auto;
+  width: 47.24%;
+}
+  
+  
+.section1-item {
+  width: 100%;
+}
+ 
+.section1-content {
+  width: max-content;
+  margin: auto;
+  color:white;
+}
+
+.section1-title {
+  font-size: 64px;
+  text-transform: uppercase;
+}
+@font-face {
+  font-family: 'font1';
+  src: url('../fonts/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2');
+}
+
+@font-face {
+  font-family: 'font2';
+  src: url('../fonts/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2');
+}
+
+@font-face {
+  font-family: 'font3';
+  src: url('../fonts/KFOkCnqEu92Fr1Mu51xIIzI.woff2');
+}
+
+@font-face {
+  font-family: 'font4';
+  src: url('../fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2');
+}
+
+@font-face {
+  font-family: 'font5';
+  src: url('../fonts/KFOlCnqEu92Fr1MmSU5fBBc4.woff2');
+}
+
+@font-face {
+  font-family: 'font6';
+  src: url('../fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2');
+}
+
+@font-face {
+  font-family: 'font7';
+  src: url('../fonts/KFOlCnqEu92Fr1MmYUtfBBc4.woff2');
+}
+
+@font-face {
+  font-family: 'font8';
+  src: url('../fonts/KFOmCnqEu92Fr1Mu4mxK.woff2');
+}
+
+.font1 {
+  font-family: font1;
+}          
+.font2 {
+  font-family: font2;
+}
+.font3 {
+  font-family: font3;
+}
+.font4 {
+  font-family: font4;
+}
+.font5 {
+  font-family: font5;
+}
+.font6 {
+  font-family: font6;
+}
+.font7 {
+  font-family: font7;
+}
+.font8 {
+  font-family: font8;
+}
 
 
+.section1-para {
+  margin-top:10px;
+  font-size: 20px;
+  text-align: center;
+}
 
-
-
-
+.make-appointment-btn {
+  padding: 18px 60px;
+  margin-top: 29px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  background: #37c989;
+  color: #fff;
+  /* margin: 0 auto; */
+  transform: translateX(-50%);
+}
 
 
 /*=================================
