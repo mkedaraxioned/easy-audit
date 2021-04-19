@@ -187,6 +187,7 @@ header a {
 .scroll-left {
   width: 2.78%;
   position: absolute;
+  left: 175px;
   top: 50%;
   /* background-color: #FFF; */
   color: #92cdea;
@@ -202,7 +203,7 @@ header a {
 .scroll-right {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 175px;
   /* background-color: #FFF; */
   color: #92cdea;
   font-size: 49px;
@@ -231,13 +232,14 @@ header a {
 }
  
 .section1-content {
-  width: max-content;
+  width: fit-content;
   margin: auto;
   color:white;
 }
 
 .section1-title {
-  font-size: 64px;
+  /* font-size: 64px; */
+  font-size: calc(3.33vw);
   text-transform: uppercase;
 }
 @font-face {
@@ -287,7 +289,8 @@ header a {
 }
 
 .make-appointment-btn {
-  padding: 18px 60px;
+  padding: 18px 6.66%;
+  /* padding: 18px 60px; */
   margin-top: 29px;
   display: inline-block;
   position: relative;
@@ -295,6 +298,7 @@ header a {
   background: #37c989;
   color: #fff;
   /* margin: 0 auto; */
+  text-transform: uppercase;
   transform: translateX(-50%);
 }
 
@@ -343,7 +347,7 @@ header a {
   padding-bottom: 106px; */
   padding: 98px 0 106px;
   border: .1px solid #e9ebec;
-  flex-basis: 33%;
+  flex-basis: 32.9%;
 }
 
 .feature-item:nth-of-type(2),
@@ -407,7 +411,8 @@ header a {
  }
 
 .section3-btns > a {
-  padding:18px 43px;
+  /* padding:18px 43px; */
+  padding: 18px 3.49%;
   background-color: #37ca8a;
   color: #fff;
   font-size: 13px;
@@ -429,7 +434,7 @@ header a {
  }
 
  .section3-btns {
-  width: fit-content;
+  /* width: fit-content; */
   margin: 59px auto 0;
   /* margin-top: 59px; */
  }
@@ -449,7 +454,7 @@ header a {
   font-size: 49px;
   text-transform: uppercase;
   text-align: center;
-  transform: translateX(-50px);
+
  }
 
  .section4 > div {
@@ -483,12 +488,13 @@ header a {
 
 .member-profile::after {
   content: " "; 
+  border-top: 1px solid #c6c6c6;
   display: block;
   width: 163px;
   position: absolute;
-  border-top: 1px solid #c6c6c6;
   bottom: -17px;
-  left: 66px;
+  left: 50%;
+  transform: translateX(-50%);
  }
 
  .infolist {
@@ -551,8 +557,8 @@ footer {
 
 footer > div {
   padding: 43px 0 36px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   font-size: 14px;
 }
 
@@ -611,7 +617,10 @@ footer > div {
   color: #37ca8a;
 }
 
-
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+}
 
  /*=================================
   footer styling ends here
@@ -619,3 +628,108 @@ footer > div {
 
 /*media query starts*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1024px) {
+.navbar {
+  justify-content: flex-end;
+}
+
+.menu-bar {
+    display: block;
+}
+   
+.hide-menu-item {
+    display: none;
+}
+ 
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-menu-item {
+  display: block;
+}
+
+.feature-item,
+.feature-item:nth-of-type(2) ,
+.feature-item:nth-of-type(5) {
+  flex-basis: 49.6%;
+}
+
+.memberlist {
+  width: 95%;
+}
+
+}  
+
+@media only screen and (max-width:767px) {
+
+  .section1-list {
+    display: none;
+  }
+    
+    
+  .feature-item, .feature-item:nth-of-type(2), .feature-item:nth-of-type(5) {
+    flex-basis: 100%;
+  }
+    
+  .section3 > div {
+    width:100%;
+  }
+    
+  .counter-list {
+    flex-direction: column;
+  }
+    
+  .section3-para {
+    font-size: 16px;
+  }
+    
+    
+  .counter-content > h3 {
+        font-size: 24px;
+  }
+    
+  .counter-content p:nth-of-type(2) {
+    font-size: 7px;
+  }  
+  
+  .counter-item {
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+    
+  }
+    
+  .counter-list {
+    justify-content: space-around;
+        flex-direction: column;
+  }
+    
+  .or-span {
+        margin: 0 5px;
+  }
+    
+    
+  .section3-btns > a
+    {
+    font-size: 10px;
+  }
+    
+    
+  .section3-btns {
+    display: flex;
+    width: 94%;
+  }
+    
+    
+  .memberitem:not(:nth-of-type(2)) {
+    display: none;
+  }
+    
+    
+    
+    
+    
+    
+    
+}
