@@ -467,7 +467,7 @@ header a {
   display: flex;
  }
 /* slider */
- .memberitem > figure .slide-active {
+ .memberitem.slide-active > figure  {
   width: 62.63%;
  }
 
@@ -509,7 +509,7 @@ header a {
 
 /* slider */
  /* .memberitem:nth-of-type(2) */
- .memberitem .slide-active {
+ .memberitem.slide-active {
    border-top: 5px solid #37c989;
    border-bottom: 5px solid #37c989;
  }
