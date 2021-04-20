@@ -632,6 +632,14 @@ footer > div {
   justify-content: space-between;
 }
 
+.section1-item {
+  padding: 34px 1.8% 0;
+  background:linear-gradient(to right, #37C989 3px, transparent 3px) 0 0,linear-gradient(to right, #37C989 3px, transparent 3px) 0 100%,linear-gradient(to left, #37C989 3px, transparent 3px) 100% 0,linear-gradient(to left, #37C989 3px, transparent 3px) 100% 100%,linear-gradient(to bottom, #37C989 3px, transparent 3px) 0 0,linear-gradient(to bottom, #37C989 3px, transparent 3px) 100% 0,linear-gradient(to top, #37C989 3px, transparent 3px) 0 100%,linear-gradient(to top, #37C989 3px, transparent 3px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 44px 44px;
+
+}
+
  /*=================================
   footer styling ends here
 =================================*/ 
