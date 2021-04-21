@@ -528,6 +528,15 @@ header a {
   border-radius: 50%;
  }
 
+ /* imp to add */
+.slick-slide .memberitem > figure > img {
+  width: 0;
+  margin-top: 35px;
+  position: relative;
+left: 50%; 
+transform: translateX(-50%);
+}
+
  /* slider */
   .slick-center .memberitem > figure > img {
   width: 80.83%;
