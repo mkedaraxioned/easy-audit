@@ -468,7 +468,7 @@ header a {
  }
 /* slider */
 /* .memberitem.slide-center > figure  { */
- .slide-active > figure  {
+ .memberitem.slide-active > figure  {
   width: 62.63%;
  }
 
@@ -511,7 +511,7 @@ header a {
 /* slider */
  /* .memberitem:nth-of-type(2) */
  /* .memberitem.slide-center { */
-  .slide-active.slide-center {
+  .memberitem.slide-active.slide-center {
    border-top: 5px solid #37c989;
    border-bottom: 5px solid #37c989;
  }
@@ -527,7 +527,7 @@ header a {
  /* slider */
 /*  .memberitem:nth-of-type(odd) > figure > img { */
  /* .memberitem.slide-center > figure > img { */
-  .slide-active.slide-center > figure > img {
+  .memberitem.slide-active.slide-center > figure > img {
   width: 80.83%;
   margin-top: 35px;
   position: relative;
@@ -537,6 +537,10 @@ header a {
 
 .memberitem:not(.slide-active) {
   display: none;
+}
+
+.memberitem.slick-active {
+  display: block;
 }
 
 .memberitem > figure {  
